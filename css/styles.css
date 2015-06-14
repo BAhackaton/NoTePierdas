@@ -1,0 +1,25 @@
+body{
+  padding: 10px;
+}
+.gris{
+  background-color: #fafafa;
+}
+
+.panel{
+  border: 1px solid #c0c0c0;
+  padding: 20px;
+}
+
+.hidden{
+  visibility: none;
+}
+
+.cartel{
+	float: right;
+	color: red;
+	font-size: 0.8em;
+}
+
+.error{
+	background-color: #ffe3c6 !important;
+}

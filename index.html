@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>No te pierdas</title>
+    <script src="libs/jquery-1.11.1.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/bootstrap-3.3.4-dist/css/bootstrap.css" type="text/css" media="screen, projection" />
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body class="gris">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 panel">
+       			<img src="img/logo.jpg" class="centrado">
+                
+       			<hr>
+                <form>
+                    <!-- sexo -->
+                    <div class="form-group" id="sexo">
+                        <div class="cartel">los campos marcados con * son obligatorios</div>
+                        <label class="radio">Sexo *
+                            <input class="sexo" type="radio" name="sexoOptions" value="" hidden checked>
+                        </label>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <label class="radio-inline">
+                                    <input class="sexo" type="radio" name="sexoOptions" value="m"> Masculino
+                                </label>
+                            </div>
+                            <div class="col-xs-6">
+                                <label class="radio-inline">
+                                    <input class="sexo" type="radio" name="sexoOptions" value="f"> Femenino
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <!-- edad -->
+                            <div class="form-group">
+                                <select class="form-control edad">
+                                    <option value="" selected>Su edad *</option>
+                                    <option value="0">0-9</option>
+                                    <option value="10">10-10</option>
+                                    <option value="20">20-29</option>
+                                    <option value="30">30-39</option>
+                                    <option value="40">40-49</option>
+                                    <option value="50">50-59</option>
+                                    <option value="60">60-+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <!-- horarios -->
+                            <div class="form-group">
+                                <select class="form-control horario">
+                                    <option value="" selected>Horario</option>
+                                    <option value="7">7:00 - 10:00</option>
+                                    <option value="10">10:00 - 14:00</option>
+                                    <option value="14">14:00 - 17:00</option>
+                                    <option value="17">17:00 - 21:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <!-- adiccion -->
+                            <div class="form-group">
+                                <select class="form-control adiccion">
+                                    <option value="" selected>Adicción *</option>
+                                    <option value="drogas">Drogas</option>
+                                    <option value="alcohol">Alcohol</option>
+                                    <option value="tabaco">Tabaco</option>
+                                    <option value="juego">Juego</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <!-- prevision -->
+                            <div class="form-group">
+                                <select class="form-control prevision">
+                                    <option value="" selected>Obra social *</option>
+                                    <option value="os1">OSDE</option>
+                                    <option value="os2">Galeno</option>
+                                    <option value="os3">ASyM</option>
+                                    <option value="ninguna">No tengo</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- barrio -->
+                    <div class="form-group">
+                        <select class="form-control barrio">
+                            <option value="" selected>Barrio</option>
+                            <option value="Agronomía">Agronomía</option>
+                            <option value="Almagro">Almagro</option>
+                            <option value="Balvanera">Balvanera</option>
+                            <option value="Barracas">Barracas</option>
+                            <option value="Belgrano">Belgrano</option>
+                            <option value="Boedo">Boedo</option>
+                            <option value="Caballito">Caballito</option>
+                            <option value="Chacarita">Chacarita</option>
+                            <option value="Coghlan">Coghlan</option>
+                            <option value="Colegiales">Colegiales</option>
+                            <option value="Constitución">Constitución</option>
+                            <option value="Flores">Flores</option>
+                            <option value="Floresta">Floresta</option>
+                            <option value="La Boca">La Boca</option>
+                            <option value="La Paternal">La Paternal</option>
+                            <option value="Liniers">Liniers</option>
+                            <option value="Mataderos">Mataderos</option>
+                            <option value="Monte Castro">Monte Castro</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Nueva Pompeya">Nueva Pompeya</option>
+                            <option value="Nuñez">Nuñez</option>
+                            <option value="Palermo">Palermo</option>
+                            <option value="Parque Avellaneda">Parque Avellaneda</option>
+                            <option value="Parque Chacabuco">Parque Chacabuco</option>
+                            <option value="Parque Chas">Parque Chas</option>
+                            <option value="Parque Patricios">Parque Patricios</option>
+                            <option value="Puerto Madero">Puerto Madero</option>
+                            <option value="Recoleta">Recoleta</option>
+                            <option value="Retiro">Retiro</option>
+                            <option value="Saavedra">Saavedra</option>
+                            <option value="San Cristóbal">San Cristóbal</option>
+                            <option value="San Nicolás">San Nicolás</option>
+                            <option value="San Telmo">San Telmo</option>
+                            <option value="Versalles">Versalles</option>
+                            <option value="Villa Crespo">Villa Crespo</option>
+                            <option value="Villa Devoto">Villa Devoto</option>
+                            <option value="Villa General Mitre">Villa General Mitre</option>
+                            <option value="Villa Lugano">Villa Lugano</option>
+                            <option value="Villa Luro">Villa Luro</option>
+                            <option value="Villa Ortúzar">Villa Ortúzar</option>
+                            <option value="Villa Pueyrredón">Villa Pueyrredón</option>
+                            <option value="Villa Real">Villa Real</option>
+                            <option value="Villa Riachuelo">Villa Riachuelo</option>
+                            <option value="Villa Santa Rita">Villa Santa Rita</option>
+                            <option value="Villa Soldati">Villa Soldati</option>
+                            <option value="Villa Urquiza">Villa Urquiza</option>
+                            <option value="Villa del Parque">Villa del Parque</option>
+                            <option value="Vélez Sarsfield">Vélez Sarsfield</option>
+                        </select>
+                    </div>
+                    <!-- enfermedad psiquiatrica -->
+                    <div class="form-group">
+                        <label class="radio">¿Tuviste alguna enfermedad psiquiátrica?
+                            <input type="radio" class="psiq" name="inlineRadioOptions" id="inlineRadio1" value="" hidden checked>
+                        </label>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="radio-inline">
+                                    <input type="radio" class="psiq" name="inlineRadioOptions" id="si" value="si"> Si
+                                </label>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="radio-inline">
+                                    <input type="radio" class="psiq" name="inlineRadioOptions" id="no" value="no"> No
+                                </label>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="radio-inline">
+                                    <input type="radio" class="psiq" name="inlineRadioOptions" id="ns" value="ns"> No sé
+                                </label>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="radio-inline">
+                                    <input type="radio" class="psiq" name="inlineRadioOptions" id="dual" value="dual"> dual
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+       			<hr>
+                <div class="btn btn-primary pull-right" onclick="javascript:validame()">Enviar</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid hidden" id="tablaResultados">
+        <table class="table table-hover" id="resultados">
+            <thead>
+                <tr>
+                    <td>Campo 1</td>
+                    <td>Campo 2</td>
+                    <td>Campo 3</td>
+                    <td>Campo 4</td>
+                    <td>Campo 5</td>
+                    <td>Campo 6</td>
+                    <td>Campo 7</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+<script src="js/init.js" charset="utf-8"></script>
+
+</html>
